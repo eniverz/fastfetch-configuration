@@ -1,48 +1,137 @@
 {
-    "$schema": "/home/mspt5/.config/fastfetch/json_schema.jsonc",
+    "$schema": "~/.config/fastfetch/json_schema.jsonc",
+    "logo": {
+        "source": "~/.config/fastfetch/arch_logo.jpg",
+        "type": "kitty-direct",
+        "position": "left",
+        "padding": {
+            "right": 2
+        },
+        "width": 40,
+        "height": 20
+    },
+    "display": {
+        "separator": " "
+    },
     "modules": [
-        "title",
-        "separator",
         {
+            "key": "╭─ ",
             "type": "os",
+            "keyColor": "green",
             "format": "{3} {12}"
         },
         {
-            "type": "host",
-            "format": "{/2}{-}{/}{2}{?3} {3}{?}"
+            "type": "kernel",
+            "keyColor": "green",
+            "key": "├─ "
         },
-        "kernel",
-        "uptime",
-        "packages",
-        "shell",
         {
-            "type": "display",
-            "compactType": "original",
-            "key": "Resolution"
+            "type": "de",
+            "keyColor": "green",
+            "key": "├─ "
         },
-        "de",
-        "wm",
-        "wmtheme",
+        {
+            "type": "wm",
+            "keyColor": "green",
+            "key": "├─ "
+        },
+        {
+            "type": "terminal",
+            "keyColor": "green",
+            "key": "├─ "
+        },
+        {
+            "type": "shell",
+            "keyColor": "green",
+            "key": "├─ "
+        },
         {
             "type": "theme",
-            "format": "{?1}{1}{?3} {3}{?} [Plasma], {?}{7}"
+            "keyColor": "green",
+            "key": "├─ "
         },
-        "icons",
-        "terminal",
         {
-            "type": "terminalfont",
-            "format": "{/2}{-}{/}{2}{?3} {3}{?}"
+            "type": "icons",
+            "keyColor": "green",
+            "key": "├─󰀻 "
         },
-        "cpu",
+        {
+            "type": "packages",
+            "keyColor": "green",
+            "key": "├─ "
+        },
+        {
+            "type": "uptime",
+            "keyColor": "green",
+            "key": "╰─󰅐 "
+        },
+        "break",
+        {
+            "type": "host",
+            "format": "{/2}{-}{/}{2}{?3} {3}{?}",
+            "keyColor": "yellow",
+            "key": "╭─󰌢 "
+        },
+        {
+            "type": "cpu",
+            "keyColor": "yellow",
+            "key": "├─󰍛 "
+        },
         {
             "type": "gpu",
-            "key": "GPU"
+            "keyColor": "yellow",
+            "key": "├─󰘚 "
+        },
+        {
+            "keyColor": "yellow",
+            "type": "disk",
+            "key": "│─ "
         },
         {
             "type": "memory",
-            "format": "{/1}{-}{/}{/2}{-}{/}{} / {}"
+            "keyColor": "yellow",
+            "key": "├─󰟖 "
+        },
+        {
+            "type": "display",
+            "keyColor": "yellow",
+            "key": "├─󰍹 "
+        },
+        {
+            "type": "battery",
+            "keyColor": "yellow",
+            "key": "╰─󱈑 "
         },
         "break",
-        "colors"
+        {
+            "type": "font",
+            "keyColor": "magenta",
+            "key": "╭─Font "
+        },
+        {
+            "type": "vulkan",
+            "keyColor": "magenta",
+            "key": "├─GPU-Driver "
+        },
+        {
+            "type": "locale",
+            "keyColor": "magenta",
+            "key": "╰─Locale "
+        },
+        "break",
+        {
+            "type": "colors",
+            "block": {
+                "range": [
+                    0,
+                    7
+                ]
+            }
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "{#white}󰮯   {#red}󰊠   {#green}󰊠   {#yellow}󰊠   {#blue}󰊠   {#magenta}󰊠   {#cyan}󰊠   {#white}󰊠"
+        }
     ]
 }
