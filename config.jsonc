@@ -128,7 +128,6 @@
                 ]
             }
         },
-        "break",
         {
             "type": "custom",
             "format": "{#white}󰮯   {#red}󰊠   {#green}󰊠   {#yellow}󰊠   {#blue}󰊠   {#magenta}󰊠   {#cyan}󰊠   {#white}󰊠"
